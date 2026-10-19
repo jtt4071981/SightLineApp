@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>
+  @font-face {
+    font-family: "Oswald";
+    src: url("fonts/Oswald[wght].ttf") format("truetype");
+    font-weight: 200 700;
+    font-style: normal;
+    font-display: block;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #06204a;
+  }
+  .frame {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    background: #06204a;
+    color: #f4f8fc;
+    font-family: "Oswald", "Liberation Sans Narrow", "Liberation Sans", sans-serif;
+  }
+  .alert-bar {
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    height: 10px;
+    background: #e10600;
+  }
+  .header {
+    position: absolute;
+    left: 0; right: 0; top: 10px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px 0 22px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .bug { width: 52px; height: 52px; display: block; flex: none; outline: 3px solid #ffd000; }
+  .station {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    line-height: 0.9;
+  }
+  .station b {
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.14em;
+    color: #ffd000;
+  }
+  .station span {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    color: #f4f8fc;
+  }
+  .onair {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #e10600;
+    color: #f4f8fc;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.16em;
+    padding: 8px 14px 6px 12px;
+    line-height: 1;
+  }
+  .lamp {
+    width: 12px;
+    height: 12px;
+    background: #ffd000;
+  }
+  .stage {
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    top: 90px;
+    bottom: 78px;
+    background: #1c6eae;
+    overflow: hidden;
+  }
+  .stage svg.map {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .lockup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -46%);
+    background: #06204a;
+    box-shadow: 12px 12px 0 #e10600;
+    padding: 16px 40px 18px;
+    text-align: center;
+    z-index: 2;
+  }
+  .kicker {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.34em;
+    color: #f4f8fc;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 132px;
+    line-height: 0.84;
+    letter-spacing: 0.015em;
+    color: #ffd000;
+    text-transform: none;
+    white-space: nowrap;
+  }
+  .rule {
+    height: 8px;
+    margin-top: 12px;
+    background: #ffd000;
+  }
+  .footer {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 68px;
+    background: #ffd000;
+    display: flex;
+    align-items: stretch;
+  }
+  .foot-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 0 28px;
+    color: #071018;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.12em;
+  }
+  .sep {
+    width: 3px;
+    height: 28px;
+    background: #071018;
+  }
+  .foot-sub {
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    font-size: 22px;
+  }
+  .foot-end {
+    width: 210px;
+    background: #e10600;
+    color: #f4f8fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.18em;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="alert-bar"></div>
+    <header class="header">
+      <div class="brand">
+        <svg class="bug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" fill="#06204a"/>
+          <rect x="3" y="3" width="7" height="26" fill="#ffd000"/>
+          <rect x="3" y="22" width="26" height="7" fill="#ffd000"/>
+          <polygon points="19,3 29,15 9,15" fill="#f4f8fc"/>
+          <polygon points="14,14 19,26 24,14" fill="#e10600"/>
+        </svg>
+        <div class="station">
+          <b>L8S</b>
+          <span>CABLE WX</span>
+        </div>
+      </div>
+      <div class="onair"><span class="lamp"></span>ON AIR</div>
+    </header>
+    <div class="stage">
+      <svg class="map" viewBox="0 0 1156 452" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="1156" height="452" fill="#1c6eae"/>
+        <g stroke="#f4f8fc" stroke-opacity="0.28" stroke-width="1.5">
+          <path d="M0 70 H1156 M0 150 H1156 M0 230 H1156 M0 310 H1156 M0 390 H1156"/>
+          <path d="M140 0 V452 M300 0 V452 M460 0 V452 M620 0 V452 M780 0 V452 M940 0 V452 M1100 0 V452"/>
+        </g>
+        <!-- landmass: gulf coast into a Florida peninsula, cut by the frame -->
+        <path fill="#f4f8fc" stroke="#071018" stroke-width="5" stroke-linejoin="miter" d="
+          M0,0
+          H520
+          L548,36
+          L530,78
+          L556,108
+          L572,168
+          L590,230
+          L578,292
+          L552,348
+          L528,392
+          L560,430
+          L512,452
+          H0
+          Z"/>
+        <path fill="#f4f8fc" stroke="#071018" stroke-width="5" stroke-linejoin="miter" d="
+          M430,392
+          L468,418
+          L452,448
+          L410,436
+          Z"/>
+        <!-- cape bulge -->
+        <path fill="#f4f8fc" stroke="#071018" stroke-width="5" d="
+          M548,188
+          C590,196 604,214 596,236
+          C586,258 552,252 548,228
+          Z"/>
+        <!-- bahamas specks -->
+        <circle cx="760" cy="250" r="10" fill="#f4f8fc" stroke="#071018" stroke-width="3"/>
+        <circle cx="802" cy="292" r="7" fill="#f4f8fc" stroke="#071018" stroke-width="3"/>
+        <circle cx="736" cy="312" r="5" fill="#f4f8fc" stroke="#071018" stroke-width="3"/>
+        <!-- trajectory -->
+        <path d="M600,228 C760,200 860,150 980,118" fill="none" stroke="#ffd000" stroke-width="5" stroke-dasharray="14 10" stroke-linecap="square"/>
+        <!-- range ring -->
+        <circle cx="600" cy="232" r="48" fill="none" stroke="#e10600" stroke-width="3"/>
+        <circle cx="600" cy="232" r="84" fill="none" stroke="#ffd000" stroke-width="2" stroke-dasharray="6 8"/>
+        <!-- rocket triangle + flame, fully inside the map, upper right -->
+        <polygon points="990,28 1064,124 916,124" fill="#f4f8fc" stroke="#071018" stroke-width="5" stroke-linejoin="miter"/>
+        <polygon points="952,116 990,158 1028,116" fill="#e10600"/>
+        <!-- corner brackets -->
+        <g fill="none" stroke="#ffd000" stroke-width="6">
+          <path d="M16,44 V16 H44"/>
+          <path d="M1112,44 V16 H1084"/>
+          <path d="M16,408 V436 H44"/>
+          <path d="M1112,408 V436 H1084"/>
+        </g>
+      </svg>
+      <div class="lockup">
+        <div class="kicker">CAN YOU SEE IT?</div>
+        <h1>SIGHTLINE</h1>
+        <div class="rule"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="foot-main">
+        <span>FLORIDA COAST</span>
+        <span class="sep"></span>
+        <span class="foot-sub">COUNTDOWN DESK</span>
+      </div>
+      <div class="foot-end">STAND BY</div>
+    </footer>
+  </div>
+</body>
+</html>

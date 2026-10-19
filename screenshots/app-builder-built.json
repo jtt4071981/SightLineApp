@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Sightline",
+      "hasCanvas": false,
+      "bodyTextLen": 1160,
+      "bodyTextHash": "f193b9e4e7fdc4cee6c6b2c7aa3d700b7ddb613755fe6b99a906f64eda76c745",
+      "bodyTextPrefix": "SIGHTLINE 7:58:12 PM The live launch list is still loading. PLAY",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Sightline",
+      "hasCanvas": false,
+      "bodyTextLen": 1160,
+      "bodyTextHash": "1dbda2a974de26c4e2db5507d3b6d7229a0da35fec9a6173ce4f08f36c76f2d8",
+      "bodyTextPrefix": "SIGHTLINE 7:58:14 PM The live launch list is still loading. PLAY",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json"
+}

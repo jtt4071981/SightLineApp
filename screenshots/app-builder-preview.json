@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "LAUNCH 8s",
+      "hasCanvas": false,
+      "bodyTextLen": 824,
+      "bodyTextHash": "5d33bcfaf31c5cf1b7988517c924f72741d5fb9f822409a4860c4ed86c33e73a",
+      "bodyTextPrefix": "LAUNCH 8S 9:55:45 AM Live · launches just now · sky loading MUSI",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "LAUNCH 8s",
+      "hasCanvas": false,
+      "bodyTextLen": 862,
+      "bodyTextHash": "11fae73022faa14831b01b55c0675ba09316235358f7351f4c43292fd306977a",
+      "bodyTextPrefix": "LAUNCH 8S 9:55:46 AM Live · launches just now · sky just now MUS",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
